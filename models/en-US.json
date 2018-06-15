@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "hello world",
+      "invocationName": "scrum master",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,9 +16,47 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "AssigneeIntent",
+          "slots": [
+            {
+              "name": "User",
+              "type": "LIST_OF_USERS"
+            }
+          ],
           "samples": [
-            "hello"
+            "assign it to {User}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "LIST_OF_USERS",
+          "values": [
+            {
+              "name": {
+                "value": "iron man"
+              }
+            },
+            {
+              "name": {
+                "value": "spider man"
+              }
+            },
+            {
+              "name": {
+                "value": "wonder woman"
+              }
+            },
+            {
+              "name": {
+                "value": "hulk"
+              }
+            },
+            {
+              "name": {
+                "value": "hawkeye"
+              }
+            }
           ]
         }
       ]

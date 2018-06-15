@@ -1,19 +1,20 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "",
+      "skill_id": "amzn1.ask.skill.4ca6dcc1-7178-4e2a-827b-40ef5d55a15f",
       "was_cloned": false,
       "merge": {
         "manifest": {
           "apis": {
             "custom": {
               "endpoint": {
-                "uri": "ask-custom-helloworld-default"
+                "uri": "ask-scrum-master"
               }
             }
           }
         }
-      }
+      },
+      "in_skill_products": []
     }
   }
 }
