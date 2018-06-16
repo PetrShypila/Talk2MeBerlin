@@ -16,21 +16,34 @@
           "samples": []
         },
         {
-          "name": "AssigneeIntent",
+          "name": "NewTaskIntent",
           "slots": [
             {
+              "name": "Task",
+              "type": "Task"
+            },
+            {
               "name": "User",
-              "type": "LIST_OF_USERS"
+              "type": "User"
             }
           ],
           "samples": [
-            "assign it to {User}"
+            "assign it to {User}",
+            "assign it {User}",
+            "assign to {User}",
+            "assign {User}",
+            "create task {Task}",
+            "create task {Task} and",
+            "create task {Task} and assign it to {User}",
+            "create task {Task} and assign to {User}",
+            "create task {Task} and assign it {User}",
+            "create task {Task} and assign {User}"
           ]
         }
       ],
       "types": [
         {
-          "name": "LIST_OF_USERS",
+          "name": "User",
           "values": [
             {
               "name": {
@@ -55,6 +68,26 @@
             {
               "name": {
                 "value": "hawkeye"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Task",
+          "values": [
+            {
+              "name": {
+                "value": "find blue infinity stone"
+              }
+            },
+            {
+              "name": {
+                "value": "save doctor strange"
+              }
+            },
+            {
+              "name": {
+                "value": "beat thanos"
               }
             }
           ]
