@@ -28,7 +28,6 @@
             }
           ],
           "samples": [
-            "make {Task} assign {User}",
             "we need a {Task} and assign this task to {User}",
             "we need {Task} assign this task to {User}",
             "we need {Task} assign it to {User}",
@@ -57,11 +56,6 @@
         {
           "name": "Task",
           "values": [
-            {
-              "name": {
-                "value": "test"
-              }
-            },
             {
               "name": {
                 "value": "design to the team shirts"

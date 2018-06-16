@@ -21,6 +21,7 @@ const DiscussTopicIntentHandler = {
 
         return handlerInput.responseBuilder
         .speak(speechText)
+        .reprompt(speechText)
         .withSimpleCard('Pacman', speechText)
         .getResponse();
     },

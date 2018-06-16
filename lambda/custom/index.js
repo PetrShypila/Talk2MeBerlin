@@ -12,8 +12,8 @@ const LaunchRequestHandler = {
   handle(handlerInput) {
     const speechText = 
     "<audio src='https://www.jovo.tech/audio/tB8EwSfi-01-start-music-2.mp3' />" +
-    "Hi Guys, let's get started right away so we have time left to do something fun!" +
-    "We have 2 topics to discuss" + 
+    "Hi Guys, let's get started right away so we have time left to do something fun! " +
+    "We have 2 topics to discuss " + 
     "The first is team shirts. The second one is location team event.";
 
     return handlerInput.responseBuilder

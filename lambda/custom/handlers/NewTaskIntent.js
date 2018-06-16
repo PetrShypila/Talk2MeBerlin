@@ -87,6 +87,7 @@ const NewTaskIntentHandler = {
 
         return handlerInput.responseBuilder
         .speak(speechText)
+        .reprompt(speechText)
         .withSimpleCard('Pacman', speechText)
         .getResponse();
     },
