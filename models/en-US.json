@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "scrum master",
+      "invocationName": "pacman",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -28,16 +28,24 @@
             }
           ],
           "samples": [
-            "assign it to {User}",
-            "assign it {User}",
-            "assign to {User}",
-            "assign {User}",
-            "create task {Task}",
-            "create task {Task} and",
-            "create task {Task} and assign it to {User}",
-            "create task {Task} and assign to {User}",
-            "create task {Task} and assign it {User}",
-            "create task {Task} and assign {User}"
+            "make {Task} assign {User}",
+            "we need a {Task} and assign this task to {User}",
+            "we need {Task} assign this task to {User}",
+            "we need {Task} assign it to {User}",
+            "we need {Task} assign this to {User}",
+            "we need a {Task} and assign this task to {User}"
+          ]
+        },
+        {
+          "name": "DiscussTopicIntent",
+          "samples": [
+            "first {Topic}"
+          ],
+          "slots": [
+            {
+              "name": "Topic",
+              "type": "Topic"
+            }
           ]
         }
       ],
@@ -47,27 +55,7 @@
           "values": [
             {
               "name": {
-                "value": "iron man"
-              }
-            },
-            {
-              "name": {
-                "value": "spider man"
-              }
-            },
-            {
-              "name": {
-                "value": "wonder woman"
-              }
-            },
-            {
-              "name": {
-                "value": "hulk"
-              }
-            },
-            {
-              "name": {
-                "value": "hawkeye"
+                "value": "Sara"
               }
             }
           ]
@@ -77,17 +65,37 @@
           "values": [
             {
               "name": {
-                "value": "find blue infinity stone"
+                "value": "test"
               }
             },
             {
               "name": {
-                "value": "save doctor strange"
+                "value": "design to the team shirts"
               }
             },
             {
               "name": {
-                "value": "beat thanos"
+                "value": "design for the team shirts"
+              }
+            },
+            {
+              "name": {
+                "value": "team shirts design"
+              }
+            },
+            {
+              "name": {
+                "value": "buy the team shirts"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            {
+              "name": {
+                "value": "topic"
               }
             }
           ]

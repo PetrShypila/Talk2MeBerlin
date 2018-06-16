@@ -3,11 +3,11 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Scrum master",
+          "summary": "pacman",
           "examplePhrases": [
-            "Alexa open scrum master"
+            "Alexa open pacman"
           ],
-          "name": "Scrum master",
+          "name": "pacman",
           "description": "Sample Full Description"
         }
       },
