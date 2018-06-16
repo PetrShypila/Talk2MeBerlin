@@ -39,13 +39,7 @@
         {
           "name": "DiscussTopicIntent",
           "samples": [
-            "first {Topic}"
-          ],
-          "slots": [
-            {
-              "name": "Topic",
-              "type": "Topic"
-            }
+            "first one"
           ]
         }
       ],
@@ -86,16 +80,6 @@
             {
               "name": {
                 "value": "buy the team shirts"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Topic",
-          "values": [
-            {
-              "name": {
-                "value": "topic"
               }
             }
           ]
